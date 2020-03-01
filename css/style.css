@@ -1,14 +1,5 @@
 /* general styles*/
 
-.back-g-white{
-    background-color: #fff;
-    -moz-box-shadow:    1px 3px 2px 1px #ccc;
-    -webkit-box-shadow: 1px 3px 2px 1px #ccc;
-    box-shadow:         1px 3px 2px 1px #ccc;
-}
-.height-250{
-    min-height: 200px;
-}
 .btn-radial{
     border-radius: 20px;
 }
@@ -102,9 +93,7 @@
 .btn-custom-radius{
     border-radius: 20px;
 }
-body{
-    background-color: #f2f7fb;
-}
+
 table tr th,table tr td{
     font-size: 14px;
 }
@@ -113,6 +102,10 @@ table tr th,table tr td{
 }
 .success-msg i,.success-msg span{
     color: green;
+}
+
+.horizontal-line{
+    border-bottom: 1px solid #bbb;
 }
 /*general styles end*/
 /*Chakra Style starts*/
@@ -188,6 +181,7 @@ footer.light .footer-copyright{	background: #cacaca;font-size: .6em;}
 .chakra-login-container{
     width: 100%;
     margin-bottom: 40px;
+    min-height: 288px;
 }
 .login-container{
     margin: 0 auto;
@@ -227,6 +221,9 @@ footer.light .footer-copyright{	background: #cacaca;font-size: .6em;}
     border-radius:0;
     padding: .375rem 0rem;
 }
+.custom-select{
+    border-radius: 20px;
+}
 .form-container p a{
     font-weight: 500;
     color: #000;
@@ -243,13 +240,29 @@ footer.light .footer-copyright{	background: #cacaca;font-size: .6em;}
     border-bottom:1px solid #ced4da !important;
     text-align: center;
 }
-.pwd-reset-otp input[type=number]::-webkit-inner-spin-button, 
-.pwd-reset-otp input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-  
+.custom-block{
+    background-color: #ccc;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
 }
-.pwd-reset-otp input{
-  width: 30px; 
-  text-align:center
+.mobile-icon{
+    font-size: 6rem;
+    margin-top: .28rem;
+}
+.email-icon {
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+.mobile-text{
+    padding-top: 1rem;
+}
+.user-image{
+    height:40px;
+    width: 40px;
+    border-radius: 20px;
+    padding: 2px;
+    border: 1px solid #bbb;
+    display: inline-block;
+    margin-left:20px;
 }
