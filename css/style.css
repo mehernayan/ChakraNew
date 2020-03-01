@@ -278,3 +278,11 @@ footer.light .footer-copyright{	background: #cacaca;font-size: .6em;}
     color: #000;
     border-color: transparent;
 }
+.top-border{
+    border-top:1px solid #ced4da;
+    padding-top: 10px;
+}
+.right-border{
+    border-right:1px solid #ced4da;
+    padding-right: 10px;
+}
