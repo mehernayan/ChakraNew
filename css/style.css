@@ -266,3 +266,15 @@ footer.light .footer-copyright{	background: #cacaca;font-size: .6em;}
     display: inline-block;
     margin-left:20px;
 }
+.btn-edit{
+    position: absolute;
+    right: 16px;
+    top: 1px;
+    background-color: transparent;
+    font-size:x-large;
+}
+.btn-edit:hover{
+    background-color: transparent;
+    color: #000;
+    border-color: transparent;
+}
