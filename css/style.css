@@ -4,7 +4,7 @@
     border-radius: 20px;
 }
 .btn-fixed{
-    width: 150px;
+    width: 150px !important;
 }
 .half-bordered{
     border-radius: 10px 10px 0px 0px;
@@ -285,4 +285,18 @@ footer.light .footer-copyright{	background: #cacaca;font-size: .6em;}
 .right-border{
     border-right:1px solid #ced4da;
     padding-right: 10px;
+}
+
+/*Home style*/
+.img-fluid{
+    width: 100% \9;
+}
+.home-carousel{
+    position: relative;
+    color: #fff;
+}
+.absolute-container{
+    position: absolute;
+    bottom: 3em;
+    left: 7em;
 }
