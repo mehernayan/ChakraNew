@@ -61,54 +61,16 @@
 .pad-bot-50{
     padding-bottom : 50px;
 }
-
-.btn.current{
-    background-color: #8754ef;
-    color:#fff;
-    border: none;
-}
 .btn.focus, .btn:focus, .btn:hover{
     color: #fff;
-}
-.table .thead-dark th {
-    color: #fff;
-    background-color: #212529;
-    border-color: #32383e;
-}
-.btn-table{
-    border-radius: 20px;
-    padding: 0px 5px;
-    width: 110px;
-}
-.table-inner{
-    width: 100%;
-}
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    color: #fff;
-    background-color: #212529;
-}
-.btn-dyna {
-    background-color: #333;
-    padding: 6px 12px;
-    border-radius: 20px;
-    color: #fff
-}
-.btn-custom-radius{
-    border-radius: 20px;
-}
-
-table tr th,table tr td{
-    font-size: 14px;
-}
-.error-msg i,.error-msg span{
-    color: red;
-}
-.success-msg i,.success-msg span{
-    color: green;
 }
 
 .horizontal-line{
     border-bottom: 1px solid #bbb;
+}
+.btn-transparent{
+    background-color: transparent;
+    color: #fff;
 }
 /*general styles end*/
 /*Chakra Style starts*/
@@ -315,8 +277,9 @@ ul.social-icons li {width:115px;display: inline-block;}
 .carousel-item.active{
     display: flex !important;
 }
-.carousel-multi{
-    background-color: #aaa;
+.sub-bottom-panel{
+    background-color: #999;
+    color: #fff;
 }
 h4.check-us-text{
     display: inline;
@@ -324,4 +287,21 @@ h4.check-us-text{
 }
 .controls-top a{
     color: #fff;
+}
+.controls-top-dark a{
+    color: #000;
+}
+.btn-bike{
+    background-color: #fff;
+}
+.btn-bike:hover,.btn-bike:active{
+    color: #000;
+}
+.nav-pills .nav-link{
+    color: #000;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #000;
+    font-weight: bold;
+    background-color: transparent;
 }
