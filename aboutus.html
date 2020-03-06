@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+     </head>
+    <body>
+        <div id="header"></div>
+        <div class="chakra-login-container">
+            <section class="home-carousel">
+                <img src="images/home-img4.jpg" class="img-fluid" alt="Responsive image">
+                <div class="container absolute-container">
+                    <div class="row>">
+                        <h2 class="carousel-text">CHAKRA</h2>
+                        <h2 class="carousel-text">A little about what's makes us spin</h2>
+                        <div class="down-con text-center">
+                          <button  class="btn btn-transparent"> <i class="fa fa-chevron-down"></i> </button>
+                        </div>
+                     </div>
+                </div>
+            </section>
+            <div class="container">
+                <div class="row mar-top-20 mar-bot-20">
+                    <div class="col-12 col-sm-8" >
+                      <h2>Our Mission</h2>
+                      <p>Chakra is your full-body cardio fix. Each 45 minutes class engages the core, builds lower body strength and improves arm definition.</p>
+                      <button  class="btn login-proceed btn-fixed btn-bike-dark mar-top-20 mar-bot-20"> Join Now </button>
+                  </div>
+                  <div class="col-12 col-sm-4" >
+                    <img alt="bike" class="img-fluid" src="images/bike2.png">
+                  </div>
+                </div>
+            </div>
+            <div class="sub-bottom-panel pad-bot-20">
+              <div class="container">
+                  <div class="row pad-top-20">
+                    <div class="col-12 pad-20 text-center quote-container" >
+                        <h3>Our unique talent steps onto podium with their magnetic energy to motivate, challenge and inspire you to go deeper - for 45 minutes and beyond.</h3>
+                        <p class="mar-top-50 founder-text">Nastassaja Suri, Founder</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row mar-top-20 mar-bot-20">
+                <div class="col-12 col-sm-4" >
+                  <img alt="bike" class="img-fluid" src="images/bike.png">
+                </div>
+                <div class="col-12 col-sm-8" >
+                    <h2>Our Class</h2>
+                    <p>Chakra is your full-body cardio fix. Each 45 minutes class engages the core, builds lower body strength and improves arm definition.</p>
+                    <button  class="btn login-proceed btn-fixed btn-bike-dark mar-top-20"> Book a bike </button>
+                </div>
+              </div>
+          </div>
+          <div class="sub-bottom-panel-2 pad-bot-20">
+            <div class="container">
+                <div class="row pad-top-20">
+                  <div class="col-12 pad-20 text-center" >
+                      <h3>NAIL BAR</h3>
+                      <h3>We appreciate the little things in life and love everything fun and funky. So come pamper yourself at the Chakra nail bar, now open at our studio</h3>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="footer"></div>
+    
+        <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script> 
+        $(function(){
+            $("#header").load("views/partials/header.html"); 
+            $("#footer").load("views/partials/footer.html"); 
+
+            /* Image slider code*/
+            
+            $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
+                var next = $(this).next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+
+                for (var i=0;i<2;i++) {
+                    next=next.next();
+                    if (!next.length) {
+                    next=$(this).siblings(':first');
+                    }
+                    next.children(':first-child').clone().appendTo($(this));
+                } 
+            });
+        });
+       
+    </script>     
+    </body>
+</html>

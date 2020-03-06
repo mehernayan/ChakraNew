@@ -294,6 +294,9 @@ h4.check-us-text{
 .btn-bike{
     background-color: #fff;
 }
+.btn-bike-dark{
+    background-color: #aaa;
+}
 .btn-bike:hover,.btn-bike:active{
     color: #000;
 }
@@ -304,4 +307,15 @@ h4.check-us-text{
     color: #000;
     font-weight: bold;
     background-color: transparent;
+}
+.founder-text{
+    font-size: 30px;
+}
+.quote-container{
+    background: url(../images/quote.png) top center no-repeat;
+    padding-top: 35px;
+}
+.sub-bottom-panel-2{
+    background: url(../images/nailbar.jpg) top center no-repeat;
+    padding-top: 35px;
 }
