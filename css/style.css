@@ -15,6 +15,9 @@
 .mar-left-50{
     margin-left: 50px;
 }
+.mar-right-20{
+    margin-right: 20px;
+}
 .pad-left-20{
     padding-left: 20px;
 }
@@ -147,7 +150,7 @@ footer ul a,footer ul a:active,footer ul a:link{color:#000;font-weight: bold;}
 .footer-copyright p {	color: #969696;	margin: 2px 0 0;}
 ul.social-footer2{width:48%;display: inline-block;}
 ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
-ul.social-footer3 li {width:125px;display: inline-block;}
+ul.social-footer3 li{width:125px;display: inline-block;}
 .follow-text{width:50%;display:inline-block;}
 /* Footer Top */
 .footer-top{	background: #252525;	padding-bottom: 30px;	margin-bottom: 30px;	border-bottom: 3px solid #222;}
@@ -180,8 +183,7 @@ footer.light .footer-copyright{	background: #cacaca;font-size: .6em;}
 /*Login*/
 .chakra-login-container{
     width: 100%;
-    margin-bottom: 40px;
-    min-height: 288px;
+    min-height: 328px;
 }
 .login-container{
     margin: 0 auto;
@@ -197,14 +199,12 @@ footer.light .footer-copyright{	background: #cacaca;font-size: .6em;}
 }
 .login-proceed{
     background-color: #aaa;
-    padding: 10px 15px;
     width: 100%;
     border-radius: 20px;
     color: #000;
     font-weight: 500;
 }
 .login-medium{
-    padding: 10px 15px;
     width: 48%;
     border-radius: 20px;
     color: #fff;
@@ -299,4 +299,29 @@ footer.light .footer-copyright{	background: #cacaca;font-size: .6em;}
     position: absolute;
     bottom: 3em;
     left: 7em;
+}
+ul.social-icons{margin-left: -40px;}
+ul.social-icons li {width:115px;display: inline-block;}
+@media (max-width: 992px){
+    .navbar-collapse {
+        background-color: #fff;
+        opacity: .95;
+        padding: 10px;
+    }
+    .nav-item{
+        line-height: 1;
+    }
+}
+.carousel-item.active{
+    display: flex !important;
+}
+.carousel-multi{
+    background-color: #aaa;
+}
+h4.check-us-text{
+    display: inline;
+    color: #fff;
+}
+.controls-top a{
+    color: #fff;
 }

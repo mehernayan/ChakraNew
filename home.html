@@ -20,11 +20,80 @@
                 </div>
             </section>
             <div class="container">
-                <div class="row">
-                    <div class="col-12" >
-                        
+                <div class="row mar-top-20">
+                    <div class="col-8 col-sm-9" >
+                        <h1>Mission</h1>
+                        <p>At Chakra, we tap into the abundance that surrounds us focus on evolving physically, mentally and spritually. Our community is built on unity and understanding that we are all one and grow individually, together. This is a celebration, so hop on a bike and enjoy the ride.</p>
+                        <ul class="social-icons">
+							<li class=""><a title="Apple Store" target="_blank"
+								href="#."><img alt="appstore"
+									width="100" height="35"
+									src="images/appstore.png"></a></li>
+							<li class=""><a href="#."
+								target="_blank" title="Google Store"><img alt="googlestore"
+									width="100" height="35"
+									src="images/google.png"></a></li>
+							</ul>
+                    </div>
+                    <div class="col-4 col-sm-3" >
+                        <a href="#." target="_blank" title="Google Store">
+                            <img alt="mobile view" class="img-fluid" src="images/mobile.jpg"></a>
                     </div>
                 </div>
+            </div>
+            <div class="carousel-multi pad-bot-20">
+            <div class="container">
+                <div class="row mar-top-20">
+                    <div class="col-12" >
+                        <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2 mar-top-20" data-ride="carousel">
+                            <h4 class="check-us-text">Check us out</h4>
+                            <!--Controls-->
+                            <div class="controls-top pull-right mar-bot-10 mar-right-20">
+                              <a class="btn-floating" href="#carousel-example-multi" data-slide="prev"><i
+                                  class="fa fa-chevron-left"></i></a>
+                              <a class="btn-floating" href="#carousel-example-multi" data-slide="next"><i
+                                  class="fa fa-chevron-right"></i></a>
+                            </div>
+                            <!--/.Controls-->
+                          
+                            <div class="carousel-inner v-2" role="listbox">
+                              <div class="carousel-item active">
+                                <div class="col-12 col-sm-3">
+                                  <div class="card mb-2">
+                                    <a href="#."><img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
+                                      alt="Card image cap"></a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item row">
+                                <div class="col-12 col-sm-3">
+                                  <div class="card mb-2">
+                                    <a href="#."><img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (34).jpg"
+                                      alt="Card image cap"></a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item row">
+                                <div class="col-12 col-sm-3">
+                                  <div class="card mb-2">
+                                    <a href="#."><img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (38).jpg"
+                                      alt="Card image cap"></a>
+                                   </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item row">
+                                <div class="col-12 col-sm-3">
+                                  <div class="card mb-2">
+                                    <a href="#."><img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (29).jpg"
+                                      alt="Card image cap"></a>
+                                  </div>
+                                </div>
+                              </div>
+                             </div>
+                           </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
 
@@ -38,7 +107,24 @@
         $(function(){
             $("#header").load("views/partials/header.html"); 
             $("#footer").load("views/partials/footer.html"); 
+
+            $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
+                var next = $(this).next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+
+                for (var i=0;i<2;i++) {
+                    next=next.next();
+                    if (!next.length) {
+                    next=$(this).siblings(':first');
+                    }
+                    next.children(':first-child').clone().appendTo($(this));
+                } 
+            });
         });
+       
     </script>     
     </body>
 </html>
