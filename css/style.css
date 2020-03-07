@@ -328,3 +328,35 @@ h4.check-us-text{
     padding-top: 35px;
     color: #fff;
 }
+.calendar-date{
+    min-height: 120px;
+    background-color: #ccc;
+}
+.calendar-time{
+    min-height: 100px;
+    background-color: #fff;
+}
+.btn-reserve{
+    width: auto;
+    padding: 6px 20px;
+    margin-top: 40%;
+}
+@media (max-width: 576px){
+    .btn-reserve{
+        width: 100%;
+        margin-top: 0%;
+    }
+}
+.modal-header{
+    border-bottom:none;
+}
+.modal-footer{
+    border-top:none;
+    justify-content: center;
+}
+.btn-date{
+    width: 3em;
+    height: 3em;
+    border-radius: 1.5em;
+    margin: 5px;
+}
