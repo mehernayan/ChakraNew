@@ -261,6 +261,7 @@ footer.light .footer-copyright{	background: #cacaca;font-size: .6em;}
     position: absolute;
     bottom: 3em;
     left: 7em;
+    width: calc(100% - 7em);
 }
 ul.social-icons{margin-left: -40px;}
 ul.social-icons li {width:115px;display: inline-block;}
@@ -272,6 +273,12 @@ ul.social-icons li {width:115px;display: inline-block;}
     }
     .nav-item{
         line-height: 1;
+    }
+    
+}
+@media (max-width: 576px){
+    .absolute-container {
+        bottom: 0rem;
     }
 }
 .carousel-item.active{
@@ -317,5 +324,7 @@ h4.check-us-text{
 }
 .sub-bottom-panel-2{
     background: url(../images/nailbar.jpg) top center no-repeat;
+    background-color: darkgreen;
     padding-top: 35px;
+    color: #fff;
 }
