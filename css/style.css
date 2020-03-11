@@ -360,3 +360,30 @@ h4.check-us-text{
     border-radius: 1.5em;
     margin: 5px;
 }
+
+ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ol.orderlist > li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 0.6em;
+  }
+  
+  ol.orderlist > li:before {
+    content: counters(item, ".") ". ";
+    display: table-cell;
+    padding-right: 0.6em;    
+  }
+  
+  li ol.orderlist > li {
+    margin: 0;
+  }
+  
+  li ol.orderlist > li:before {
+    content: counters(item, ".") " ";
+  }
