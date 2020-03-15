@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+     </head>
+    <body>
+        <div id="header"></div>
+        <section class="body-header text-center"><h1>Hi Nathan</h1></section>
+        <div class="chakra-login-container">
+            <div class="container login-container pad-top-20">
+                <div class="row pad-bot-20  mar-bot-20">
+                    <div class="col-12 col-sm-6 pad-top-20" >
+                        <h5>YOUR UPCOMING RIDE</h5>
+                        <div class="upcoming-ride">
+                            <h4>Saturday</h4>
+                            <h4>7:00 pm</h4>
+                            <p>Infantry Road</p>
+                            <p>Bike <span class="badge badge-secondary">1</span></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 pad-top-20" >
+                        <h5>YOUR JOURNEY</h5>
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <span class="records-number">12</span>
+                                <span class="records-text">rides down</span>
+                            </div>
+                            <div class="col-4 text-center">
+                                <span class="records-number">4</span>
+                                <span class="records-text">classes<br/> to go</span>
+                            </div>
+                            <div class="col-4 text-center">
+                                <span class="records-number">5</span>
+                                <span class="records-text">weeks strong</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr-border"></div>
+                <div class="row pad-bot-20">
+                    <div class="col-12 pad-top-20" >
+                        <div class="accordion" id="accordionExample">
+                            <div class="child-accordion hr-border pad-bot-20">
+                              <div class="child-accordion-header" id="headingOne">
+                                <h5 class="mb-0 pad-bot-10" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Contact Details <i class="fa fa-chevron-right pull-right"></i>
+                                </h5>
+                              </div>
+                          
+                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="child-accordion-body">
+                                    Contact details come here
+                                </div>
+                              </div>
+                            </div>
+                            <div class="child-accordion pad-top-20">
+                              <div class="child-accordion-header" id="headingTwo">
+                                <h5 class="mb-0 pad-bot-10" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Bike Settings <i class="fa fa-chevron-right pull-right"></i>
+                                </h5>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="child-accordion-body">
+                                    Bike settings come here
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="hr-border"></div>
+                <div class="row pad-bot-20">
+                    <div class="col-12 pad-top-20" >
+                        <h5 class="shoe-size" data-toggle="modal" data-target="#updateModalCenter"> Shoe Size <span class="pull-right">
+                            43 UK
+                        </span></h5>
+
+                    </div>
+                </div>
+                <div class="hr-border"></div>
+                <div class="row pad-bot-20">
+                    <div class="col-12 pad-top-20" >
+                        <h5> Colour  <span class="pull-right">Feature available on app</span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+        <!-- Modal -->
+        <div class="modal fade" id="updateModalCenter" tabindex="-1" role="dialog" aria-labelledby="updateModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content btn-radial">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body text-center">
+                    <h2 class="mar-bot-10">Update<br/> Shoe Size</h2>
+                    <select class="form-control custom-select modal-select" id="shoeSize">
+                        <option selected>Select a size</option>
+                        <option value="42">42 UK</option>
+                        <option value="43">43 UK</option>
+                        <option value="44">44 UK</option>
+                        <option value="45">45 UK</option>
+                        <option value="46">46 UK</option>
+                        <option value="47">47 UK</option>
+                    </select>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn login-proceed btn-fixed">Update</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script> 
+       $(function(){
+            $("#header").load("views/partials/headerloggedin.html"); 
+            $("#footer").load("views/partials/footer.html"); 
+
+            $(".collapse.show").siblings().find(".fa").removeClass("fa-chevron-right").addClass("fa-chevron-down");
+        });
+        $(".child-accordion-header").on("click",function(){
+            var notCollapsed = $(this).siblings().hasClass("show");
+            $(this).parents().find(".fa").removeClass("fa-chevron-down").addClass("fa-chevron-right");
+            if(notCollapsed){
+               $(this).find(".fa").removeClass("fa-chevron-down").addClass("fa-chevron-right");
+            }else{
+                $(this).find(".fa").removeClass("fa-chevron-right").addClass("fa-chevron-down");
+            }
+         });
+    </script>     
+    </body>
+</html>
