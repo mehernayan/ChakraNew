@@ -433,3 +433,6 @@ ol {
 .shoe-size{
     cursor: pointer;
 }
+.margin-zero{
+    margin: 0rem;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+     </head>
+    <body>
+        <div id="header"></div>
+        <section class="body-header text-center"><h1>You're booked!</h1></section>
+        <div class="chakra-login-container">
+            <div class="container login-container pad-top-50">
+                <div class="row">
+                      <div class="col-3 col-sm-2" >
+                        <img src="images/chakra-vertical.png" alt="chakra" />
+                      </div>
+                      <div class="col-9 col-sm-10" >
+                        <h3>You're booked!</h3>
+                        <p class="mar-top-20">Bike 10  is all yours. See ypu on Monday, March 5th at 5:30pm.</p>
+                        <p class="mar-top-20">You'll find us at 126 Infantry Road (Prestige Nugget)</p>
+                        <p class="mar-top-20">Vijeta, your instructor, will be waiting for you. And remember, all you have to do is enjoy the ride :) </p>
+                        <p class="mar-top-20 margin-zero">See you soon!</p>
+                        <p>The Chakra Firm</p>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    
+        <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script> 
+        $(function(){
+            $("#header").load("views/partials/headerloggedin.html"); 
+            $("#footer").load("views/partials/footer.html"); 
+        });
+    </script>     
+    </body>
+</html>
